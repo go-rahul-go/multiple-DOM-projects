@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bmi.css">
+</head>
+<body>
+    <nav class="navigation">
+        <a class="home-btn" href="../index.html"><i class="fa-solid fa-house"></i></a>
+        <header>
+            <h2>BMI Calculator</h2>
+        </header>
+    </nav>
+    
+    <main>
+        
+        <form id="form">
+            <input type="number" placeholder="height in cm" min="100" max="250" required id="height"/>
+            <input type="number" placeholder="weight in kg" min="30" max="300" required id="weight"/>
+            <button>Calculate</button>
+        </form>
+    </main>
+    <div class="outcome">
+        <p id="result"></p>
+        <p id="remark"></p>
+    </div>
+    <script src="./bmi.js"></script>
+</body>
+</html>
